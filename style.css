@@ -24,6 +24,7 @@
     right: 2%;
     font-family: 'MyFont';
     font-size: 60px;
+    text-shadow: 3px 1px 6px aliceblue;
 }
 #highscoreBox{
     position: absolute;
@@ -31,6 +32,7 @@
     right: 2%;
     font-family: 'MyFont';
     font-size: 60px;
+    text-shadow: 3px 1px 6px aliceblue;
 }
 
 #board{
