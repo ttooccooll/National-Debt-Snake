@@ -4,56 +4,126 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('Chomsky.otf') format('truetype');
+  }
+
 .body{
-    background-image: url("bg.jpg");
+    background: linear-gradient(to right, #000, Black, transparent), url("fedsnake.png");
+    background-position: right;
     min-height: 100vh;
-    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 #scoreBox{
     position: absolute;
-    top: 9px;
-    right: 165px;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 80px;
-    font-weight: bold;
+    top: 19px;
+    right: 2%;
+    font-family: 'MyFont';
+    font-size: 60px;
 }
 #highscoreBox{
     position: absolute;
     top: 100px;
-    right: 54px;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 80px;
-    font-weight: bold;
+    right: 2%;
+    font-family: 'MyFont';
+    font-size: 60px;
 }
 
 #board{
-    background: linear-gradient(rgb(224, 204, 204),rgba(37, 192, 212, 0.824));
-    width: 90vmin;
-    height: 92vmin;
-    border: 2px solid yellow;
+    background: linear-gradient(rgb(8, 42, 1),rgba(0, 0, 0, 0.824));
+    width: 95vmin;
+    height: 95vmin;
+    border: 2px solid rgb(158, 158, 158);
+    margin: 1%;
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    overflow: hidden;
+    animation: firex 6s infinite alternate;
 }
+@keyframes firex {
+    0% {
+      box-shadow: inset 0 0 15px 10px rgba(255, 165, 0, 0.7), inset 0 0 50px 15px rgba(255, 69, 0, 0.5);
+    }
+    50% {
+      box-shadow: inset 0 0 27px 10px rgba(255, 165, 0, 0.7), inset 0 0 70px 30px rgba(255, 69, 0, 0.5), inset 0 0 7px 5px rgba(255, 165, 0, 0.7), inset 0 0 40px 20px rgba(255, 69, 0, 0.5);
+    }
+    100% {
+      box-shadow: inset 0 0 15px 10px rgba(255, 165, 0, 0.7), inset 0 0 50px 15px rgba(255, 69, 0, 0.5);
+    }
+  }
 .head{
-    /* background-color: rgb(144, 61, 247); */
-    background: linear-gradient(rgb(234, 238, 125),rgb(241, 4, 4));
-    border: 2px solid rgb(48, 40, 216);
-    transform: scale(1.02);
-    border-radius: 9px;
+    background-image: url(snakehead.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    z-index: 3;
+    transform: scale(1.2);
 }
 .snake{
-    background-color: rgb(48, 40, 216);
-    border: .25vmin solid rgb(29, 163, 109);
-    border-radius: 12px;
+    background-image: url(fire.png);
+    border: .25vmin solid rgb(226, 7, 7);
+    background-size: contain;
+    border-radius: 30px;
+    animation: fire .5s infinite linear;
 }
+@keyframes fire {
+    0% {
+      box-shadow: 0 0 15px 2px #ff1100, 0 0 50px 10px #ff5500;
+      background-color: #000000;
+    }
+    50% {
+      box-shadow: 0 0 27px 5px #b61509, 0 0 70px 20px #ff9900, inset 0 0 7px 5px #b61509, inset 0 0 40px 20px #ff9900;
+      background-color: #000000;
+    }
+    100% {
+      box-shadow: 0 0 15px 2px #ff1100, 0 0 50px 10px #ff5500, inset 0 0 8px 4px #b61509, inset 0 0 20px 10px #ff9900;
+      background-color: #000000;
+    }
+  }
 .food{
-    /* background-color: yellow; */
-    background: linear-gradient(yellow,rgb(113, 113, 231));
-    border: .25vmin solid white;
-    border-radius: 5px;
+    background-image: url(foreignwar.png);
+    background-size: contain;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
 }
+.bailout{
+    background-image: url(bailout.png);
+    background-size: contain;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
+}
+.subsidy{
+    background-image: url(subsidy.png);
+    background-size: contain;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
+}
+.aid{
+    background-image: url(aid.png);
+    background-size: contain;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
+}
+.fire{
+    animation: firez 6s infinite alternate;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+@keyframes firez {
+    0% {
+      box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.7), 0 0 50px 15px rgba(255, 69, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 27px 10px rgba(255, 165, 0, 0.7), 0 0 70px 30px rgba(255, 69, 0, 0.5), inset 0 0 7px 5px rgba(255, 165, 0, 0.7), inset 0 0 40px 20px rgba(255, 69, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.7), 0 0 50px 15px rgba(255, 69, 0, 0.5);
+    }
+  }
+  

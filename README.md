@@ -1,2 +1,2 @@
-# The-Ultimate-Snake-Game
-This is a simple Snake Game made with HTML,CSS and JS by me.
+# National Debt Snake
+You guessed it kids, this is the game of snake with a national debt theme.
