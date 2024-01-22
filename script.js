@@ -14,30 +14,6 @@ food = { x: 8, y: 6 };
 bailout = { x: 10, y: 2 };
 subsidy = { x: 6, y: 11 };
 aid = { x: 3, y: 5 };
-const fireCoordinates = [
-    { x: 15, y: 1 },
-    { x: 15, y: 2 },
-    { x: 15, y: 3 },
-    { x: 15, y: 4 },
-    { x: 15, y: 5 },
-    { x: 15, y: 7 },
-    { x: 15, y: 8 },
-    { x: 15, y: 9 },
-    { x: 15, y: 10 },
-    { x: 15, y: 13 },
-    { x: 15, y: 14 },
-    { x: 15, y: 15 },
-    { x: 1, y: 15 },
-    { x: 2, y: 15 },
-    { x: 3, y: 15 },
-    { x: 5, y: 15 },
-    { x: 8, y: 15 },
-    { x: 9, y: 15 },
-    { x: 10, y: 15 },
-    { x: 11, y: 15 },
-    { x: 12, y: 15 },
-    { x: 14, y: 15 },
-];
 
 //Game functions
 function main(ctime) {
@@ -267,14 +243,6 @@ function gameEngine() {
   textwElement.style.top = "4rem";
   aidElement.appendChild(textwElement);
   board.appendChild(aidElement);
-
-  fireCoordinates.forEach(coordinate => {
-    const fireElement = document.createElement("div");
-    fireElement.style.gridRowStart = coordinate.y;
-    fireElement.style.gridColumnStart = coordinate.x;
-    fireElement.classList.add("fire");
-    board.appendChild(fireElement);
-  });
 }
 
 //Main logic starts here

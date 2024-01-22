@@ -111,21 +111,5 @@
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
 }
-.fire{
-    animation: firez 6s infinite alternate;
-    background-size: contain;
-    border-radius: 15px;
-}
 
-@keyframes firez {
-    0% {
-      box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.7), 0 0 50px 15px rgba(255, 69, 0, 0.5);
-    }
-    50% {
-      box-shadow: 0 0 27px 10px rgba(255, 165, 0, 0.7), 0 0 70px 30px rgba(255, 69, 0, 0.5), inset 0 0 7px 5px rgba(255, 165, 0, 0.7), inset 0 0 40px 20px rgba(255, 69, 0, 0.5);
-    }
-    100% {
-      box-shadow: 0 0 15px 10px rgba(255, 165, 0, 0.7), 0 0 50px 15px rgba(255, 69, 0, 0.5);
-    }
-  }
   
