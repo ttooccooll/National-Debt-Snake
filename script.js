@@ -195,10 +195,7 @@ function gameEngine() {
   foodElement.classList.add("food");
   const textyElement = document.createElement("span");
   textyElement.textContent = "Foreign War";
-  textyElement.classList.add("food-text");
-  textyElement.style.color = "rgb(158, 158, 158)";
-  textyElement.style.position = "relative";
-  textyElement.style.bottom = "-4.3rem";
+  textyElement.classList.add("food-text", "problems");
   foodElement.appendChild(textyElement);
   board.appendChild(foodElement);
 
@@ -209,10 +206,7 @@ function gameEngine() {
   bailoutElement.classList.add("bailout");
   const textElement = document.createElement("span");
   textElement.textContent = "Bailout";
-  textElement.classList.add("bailout-text");
-  textElement.style.color = "rgb(158, 158, 158)";
-  textElement.style.position = "relative";
-  textElement.style.bottom = "-4.3rem";
+  textElement.classList.add("bailout-text", "problems");
   bailoutElement.appendChild(textElement);
   board.appendChild(bailoutElement);
 
@@ -223,10 +217,7 @@ function gameEngine() {
   subsidyElement.classList.add("subsidy");
   const textqElement = document.createElement("span");
   textqElement.textContent = "Subsidy";
-  textqElement.classList.add("subsidy-text");
-  textqElement.style.color = "rgb(158, 158, 158)";
-  textqElement.style.position = "relative";
-  textqElement.style.bottom = "-4.3rem";
+  textqElement.classList.add("subsidy-text", "problems");
   subsidyElement.appendChild(textqElement);
   board.appendChild(subsidyElement);
 
@@ -237,10 +228,7 @@ function gameEngine() {
   aidElement.classList.add("aid");
   const textwElement = document.createElement("span");
   textwElement.textContent = "Foreign ''Aid''";
-  textwElement.classList.add("aid-text");
-  textwElement.style.color = "rgb(158, 158, 158)";
-  textwElement.style.position = "relative";
-  textwElement.style.bottom = "-4.3rem";
+  textwElement.classList.add("problems");
   aidElement.appendChild(textwElement);
   board.appendChild(aidElement);
 }

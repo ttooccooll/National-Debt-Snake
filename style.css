@@ -93,24 +93,32 @@
     background-size: contain;
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
+    text-align: center;
 }
 .bailout{
     background-image: url("bailout.png");
     background-size: contain;
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
+    text-align: center;
 }
 .subsidy{
     background-image: url("subsidy.png");
     background-size: contain;
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
+    text-align: center;
 }
 .aid{
     background-image: url("aid.png");
     background-size: contain;
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
-}
+    text-align: center;
 
-  
+}
+.problems {
+  color: rgb(158, 158, 158);
+  position: relative;
+  bottom: -4.3rem;
+}
