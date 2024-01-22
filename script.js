@@ -198,7 +198,7 @@ function gameEngine() {
   textyElement.classList.add("food-text");
   textyElement.style.color = "rgb(158, 158, 158)";
   textyElement.style.position = "relative";
-  textyElement.style.top = "4rem";
+  textyElement.style.top = "4.2rem";
   foodElement.appendChild(textyElement);
   board.appendChild(foodElement);
 
@@ -212,7 +212,7 @@ function gameEngine() {
   textElement.classList.add("bailout-text");
   textElement.style.color = "rgb(158, 158, 158)";
   textElement.style.position = "relative";
-  textElement.style.top = "4rem";
+  textElement.style.top = "4.2rem";
   bailoutElement.appendChild(textElement);
   board.appendChild(bailoutElement);
 
@@ -226,7 +226,7 @@ function gameEngine() {
   textqElement.classList.add("subsidy-text");
   textqElement.style.color = "rgb(158, 158, 158)";
   textqElement.style.position = "relative";
-  textqElement.style.top = "4rem";
+  textqElement.style.top = "4.2rem";
   subsidyElement.appendChild(textqElement);
   board.appendChild(subsidyElement);
 
@@ -240,7 +240,7 @@ function gameEngine() {
   textwElement.classList.add("aid-text");
   textwElement.style.color = "rgb(158, 158, 158)";
   textwElement.style.position = "relative";
-  textwElement.style.top = "4rem";
+  textwElement.style.top = "4.2rem";
   aidElement.appendChild(textwElement);
   board.appendChild(aidElement);
 }
