@@ -142,8 +142,8 @@
   margin: 10% 0 0 25%;
   padding: 2%;
   border: 1px solid #888;
-  width: 25%;
-  height: 50%;
+  width: 50vh;
+  height: 50vh;
   z-index: 4;
   font-family: 'MyFont';
   font-size: 30px;
