@@ -44,6 +44,17 @@ function isCollide(snake) {
     return true;
   }
 }
+
+// Display the modal
+function openModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
+
+// Close the modal
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
+
 function gameEngine() {
   //Part1: Updating the snake array
   musicSound.play();
@@ -51,13 +62,22 @@ function gameEngine() {
     musicSound.pause();
     gameOverSound.play();
     inputDir = { x: 0, y: 0 };
-    alert(
-      "Default! Press any key to print your way out of this mess at the expense of the public...I mean, to play again.\n\n\n\nIf you're starting to feel cynical, study Bitcoin."
-    );
+    // Open the modal
+    openModal();
+
+    // Add event listener to close the modal on any key press
+    document.addEventListener('keydown', closeModalOnKeyPress);
     gameOverSound.play();
     snakeArr = [{ x: 2, y: 5 }];
     score = 0;
   }
+
+  // Function to close the modal on any key press
+function closeModalOnKeyPress() {
+  closeModal();
+  // Remove the event listener to avoid closing the modal multiple times
+  document.removeEventListener('keydown', closeModalOnKeyPress);
+}
 
   // If you have eaten the food, increment the score and regenerate the food
   if (snakeArr[0].y === food.y && snakeArr[0].x === food.x) {
