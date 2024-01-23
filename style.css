@@ -10,7 +10,7 @@
   }
 
 .body{
-    background: linear-gradient(to right, #000, Black, transparent), url("fedsnake.png");
+    background: linear-gradient(to right, #000, rgb(4, 22, 0), Black, transparent), url("fedsnake.png");
     background-size: contain;
     background-position: right;
     min-height: 100vh;
