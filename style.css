@@ -35,6 +35,15 @@
     font-size: 60px;
     text-shadow: 3px 1px 6px aliceblue;
 }
+#fedhighscoreBox{
+  position: absolute;
+  top: 100px;
+  right: 2%;
+  font-family: 'MyFont';
+  font-size: 60px;
+  text-shadow: 3px 1px 6px aliceblue;
+  margin-top: 60px;
+}
 
 #board{
     background: linear-gradient(rgb(8, 42, 1),rgba(0, 0, 0, 0.824));
