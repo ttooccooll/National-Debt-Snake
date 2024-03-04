@@ -148,11 +148,11 @@
 .modal-content {
   background: url("fedsnake.png");
   background-size: cover;
-  margin: 10% 0 0 25%;
+  margin: 2% 0 0 25%;
   padding: 2%;
   border: 1px solid #888;
-  width: 50vh;
-  height: 50vh;
+  width: 80vh;
+  height: 80vh;
   z-index: 4;
   font-family: 'MyFont';
   font-size: 30px;
