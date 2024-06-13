@@ -253,8 +253,6 @@ function closeModalOnKeyPress() {
   board.appendChild(aidElement);
 }
 
-//Main logic starts here
-// musicSound.play();
 let highscore = localStorage.getItem("highscore");
 if (highscore === null) {
   highscoreval = 0;
@@ -265,7 +263,7 @@ if (highscore === null) {
 }
 window.requestAnimationFrame(main);
 window.addEventListener("keydown", (e) => {
-  inputDir = { x: 0, y: 1 }; //Start the game
+  inputDir = { x: 0, y: 1 };
   switch (e.key) {
     case "ArrowUp":
       console.log("ArrowUp");

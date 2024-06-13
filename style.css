@@ -161,13 +161,14 @@
 
 @media screen and (max-width: 1480px) {
   #scoreBox{
-    font-size: 45px,
+    font-size: 45px;
   }
   #highscoreBox{
-    font-size: 40px
+    font-size: 40px;
   }
   #fedhighscoreBox{
     font-size: 40px;
+    margin-top: 40px;
   }
   .body{
     background: url("fedsnake.png");
@@ -178,5 +179,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+    .modal-content {
+    background: url("fedsnake.png");
+    background-size: cover;
+    background-position: center;
+    margin: 2.5%;
+    padding: 2.5%;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    z-index: 4;
+    font-family: 'MyFont';
+    font-size: 30px;
+    text-shadow: 3px 1px 6px aliceblue;
+  }
 }
-}
+
+@media screen and (max-width: 700px) {
+  .head{
+    transform: scale(2);
+  }
+  .problems {
+    bottom: -4vh;
+  }
+}  
