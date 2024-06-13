@@ -291,6 +291,26 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+const upButton = document.getElementById('up');
+const downButton = document.getElementById('down');
+const leftButton = document.getElementById('left');
+const rightButton = document.getElementById('right');
+
+upButton.addEventListener('click', () => {
+  inputDir = { x: 0, y: -1 };
+});
+
+downButton.addEventListener('click', () => {
+  inputDir = { x: 0, y: 1 };
+});
+
+leftButton.addEventListener('click', () => {
+  inputDir = { x: -1, y: 0 };
+});
+
+rightButton.addEventListener('click', () => {
+  inputDir = { x: 1, y: 0 };
+});
 
 async function fetchNationalDebt() {
   const url = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny?format=json&sort=-record_date&limit=1';
